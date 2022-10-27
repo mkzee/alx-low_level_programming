@@ -1,0 +1,1 @@
+This directory contains solution to ALX more pointers task.
