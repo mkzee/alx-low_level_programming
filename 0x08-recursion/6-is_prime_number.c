@@ -21,11 +21,8 @@ int is_prime_number(int n)
 
 int prime(int n, int x)
 {
-	if (n <= 0)
+	if (n <= 1)
 		return (0);
-
-	if (n == 1)
-		return (1);
 
 	if (!(n % x) && n == x)
 		return (1);
