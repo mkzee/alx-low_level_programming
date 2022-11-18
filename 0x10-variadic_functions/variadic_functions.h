@@ -9,22 +9,18 @@ void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
 
-/* Added functions to print_all source code */
-void _printchar(va_list list);
-void _printstr(va_list list);
-void _printfloat(va_list list);
-void _printint(va_list list);
-
 /**
- * struct checker - defines printer
- * @type: represents a data type
- * @f: function pointer
- */
-typedef struct checker
-{
-	char *type;
-	void (*f)();
-} checker;
+ *struct get_format -main entry.
+ *@p_type: pointer to a char
+ *@func: pointer to a function
+ *Description:getfunction compare operator type and invoke the correct function
+ **/
 
+typedef struct get_format
+{
+	char *p_type;
+	void (*func)();
+
+} get_format;
 
 #endif
