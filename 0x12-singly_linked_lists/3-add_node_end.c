@@ -7,6 +7,7 @@
  * @str: new data
  * @head: head node
  */
+
 list_t *add_node_end(list_t **head, const char *str)
 {
 	char *string = strdup(str);
